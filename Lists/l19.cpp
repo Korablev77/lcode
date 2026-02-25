@@ -80,10 +80,8 @@ static void ListFree(ListNode * head)
 
 static bool ListCmp(ListNode * l1, ListNode * l2)
 {
-    printf("l1=%p l2=%p \n", l1, l2);
     while (l1 != nullptr && l2 != nullptr)
     {
-        printf("l1=%d l2=%d \n", l1->val, l2->val);
         if (l1->val != l2->val)
             return false;
         l1 = l1->next;
